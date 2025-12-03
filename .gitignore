@@ -1,0 +1,18 @@
+# Node
+node_modules/
+package.json
+package-lock.json
+
+# Tailwind dev files
+src/
+tailwind.config.js
+postcss.config.js
+
+# Env & cache
+.env
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
