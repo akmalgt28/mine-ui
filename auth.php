@@ -29,14 +29,14 @@ require __DIR__ . '/templates/default.php';
       <form class="flex flex-col space-y-5 w-full mt-8 md:mt-5">
         <div class="flex flex-col space-y-2">
           <label for="email" class="text-base text-black">Email</label>
-          <input type="email" name="email" placeholder="mamal@gmail.com"
+          <input type="email" id="email" name="email" placeholder="mamal@gmail.com"
             class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
                    w-full focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
         </div>
 
         <div class="flex flex-col space-y-2">
           <label for="password" class="text-base text-black">Password</label>
-          <input type="password" name="password" placeholder="••••••••"
+          <input type="password" name="password" id="password" placeholder="••••••••"
             class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
                    w-full focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
         </div>
@@ -44,8 +44,7 @@ require __DIR__ . '/templates/default.php';
         <div class="flex items-center justify-between w-full">
           <label class="flex items-center space-x-2 text-gray-700 ">
             <input type="checkbox"
-              class="w-5 h-5 appearance-none rounded-[5px] border border-gray-400
-                     checked:bg-[#5465ff] checked:border-[#5465ff] cursor-pointer transition-all" />
+              class="w-5 h-5 appearance-none rounded-[5px] borde text-brand-500 cursor-pointer transition-all" />
             <span class="text-base select-none">Ingatkan saya</span>
           </label>
 
@@ -95,14 +94,14 @@ require __DIR__ . '/templates/default.php';
           <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
             <div class="flex flex-col space-y-2 w-full sm:w-1/2">
               <label for="namadepan" class="text-base text-black">Nama Depan</label>
-              <input type="text" id="namadepan" placeholder="Nama Depan"
+              <input type="text" id="namadepan" name="namadepan" placeholder="Nama Depan"
                 class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
                        focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
             </div>
 
             <div class="flex flex-col space-y-2 w-full sm:w-1/2">
               <label for="namabelakang" class="text-base text-black">Nama Belakang</label>
-              <input type="text" id="namabelakang" placeholder="Nama Belakang"
+              <input type="text" id="namabelakang" name="namadepan" placeholder="Nama Belakang"
                 class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
                        focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
             </div>
@@ -110,7 +109,7 @@ require __DIR__ . '/templates/default.php';
 
           <div class="flex flex-col space-y-2">
             <label class="text-base text-black">Email</label>
-            <input type="email" placeholder="Email"
+            <input type="email" id="email" name="email" placeholder="Email"
               class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
                      focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
           </div>
@@ -125,8 +124,7 @@ require __DIR__ . '/templates/default.php';
           <div class="flex flex-col space-y-5 w-full mt-2">
             <label class="flex items-start space-x-2 text-gray-700">
               <input type="checkbox"
-                class="mt-1 w-5 h-5 appearance-none rounded-[5px] border border-gray-400
-                       checked:bg-[#5465ff] checked:border-[#5465ff] cursor-pointer transition-all duration-200" />
+                class="mt-1 w-5 h-5 appearance-none rounded-[5px] text-brand-500 cursor-pointer transition-all duration-200" />
               <span class="text-base leading-relaxed select-none">
                 Saya menyetujui 
                 <a href="#" class="text-[#5465ff] hover:underline">Syarat & Ketentuan</a> 
@@ -162,7 +160,7 @@ require __DIR__ . '/templates/default.php';
         <form class="flex flex-col space-y-5 w-full mt-8 md:mt-5">
           <div class="flex flex-col space-y-2">
             <label for="email" class="text-base text-black">Email</label>
-            <input type="email" name="email" placeholder="mamal@gmail.com"
+            <input type="email" id="email" name="email" placeholder="mamal@gmail.com"
               class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
                      w-full focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
           </div>
@@ -177,8 +175,7 @@ require __DIR__ . '/templates/default.php';
           <div class="flex items-center justify-between w-full">
             <label class="flex items-center space-x-2 text-gray-700">
               <input type="checkbox"
-                class="w-5 h-5 appearance-none rounded-[5px] border border-gray-400
-                       checked:bg-[#5465ff] checked:border-[#5465ff] cursor-pointer transition-all" />
+                class="w-5 h-5 appearance-none rounded-[5px] text-brand-500 cursor-pointer transition-all" />
               <span class="text-base select-none">Ingatkan saya</span>
             </label>
 

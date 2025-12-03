@@ -39,7 +39,7 @@ require __DIR__ . '/templates/default.php';
     </style>
 <body>
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent text-white text-[18px]">
-        <div class="container mx-auto flex items-center justify-between py-4 px-8 md:6px">
+        <div class="container mx-auto flex items-center justify-between py-4 px-8 md:px-6">
             <div class="flex items-center gap-8">
                 <img src="https://ronekimedia.com/wp-content/uploads/2025/05/sdfsdgs.png" class="w-[150px] h-auto">
                 <div class="space-x-6 xl:space-x-8 hidden lg:flex">
@@ -108,7 +108,7 @@ require __DIR__ . '/templates/default.php';
 
 <!-- BAGIAN KEUNGGULAN -->
     <section id="keunggulan" class="mt-[45px]">
-        <div class="container mx-auto px-8 md:6px">
+        <div class="container mx-auto px-8 md:px-6">
 <!-- KEUNGGULAN JUDUL -->
             <div class="flex items-center gap-3 mb-10">
                 <div class="h-10 w-10 bg-[#788BFF] rounded-xl flex items-center justify-center text-white font-bold">
@@ -159,7 +159,7 @@ require __DIR__ . '/templates/default.php';
     </section>
 <!-- BAGIAN CARA KERJA -->
     <section id="cara-kerja" class="mt-[45px]">
-        <div class="container mx-auto px-8 md:6px">
+        <div class="container mx-auto px-8 md:px-6">
 <!-- CARA KERJA JUDUL -->
             <div class="flex items-center gap-3 mb-10">
                 <div class="h-10 w-10 bg-[#788BFF] rounded-xl flex items-center justify-center text-white font-bold">
@@ -216,7 +216,7 @@ require __DIR__ . '/templates/default.php';
         </div>
     </section>
     <section id="faq" class="mt-[45px] mb-[45px]">
-        <div class="container mx-auto px-8 md:6px">
+        <div class="container mx-auto px-8 md:px-6">
             <div class="flex items-center gap-3 mb-10">
                 <div class="h-10 w-10 bg-[#788BFF] rounded-xl flex items-center justify-center text-white font-bold">
                     <i class="fa-solid fa-question"></i>
@@ -271,7 +271,7 @@ require __DIR__ . '/templates/default.php';
         </div>
     </section>
     <footer class="bg-[#E4EEFF] text-white">
-        <div class="container mx-auto px-8 md:6px py-5 flex flex-col items-center text-center gap-10">
+        <div class="container mx-auto px-8 md:px-6 py-5 flex flex-col items-center text-center gap-10">
             <nav class="flex flex-wrap justify-center gap-3 text-[#5465FF] text-[16px] font-medium">
                 <a href="#hero" class="hover:text-black transition">Home</a>
                 <a href="#keunggulan" class="hover:text-black transition">Keunggulan Kami</a>
