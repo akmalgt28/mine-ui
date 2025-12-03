@@ -109,3 +109,12 @@ darkToggleBtn?.addEventListener('click', () => {
     localStorage.setItem('theme', 'light');
   }
 });
+
+function toggleDark() {
+  document.documentElement.classList.add("no-transition");
+  document.documentElement.classList.toggle("dark");
+
+  setTimeout(() => {
+    document.documentElement.classList.remove("no-transition");
+  }, 50); // kecil aja, biar cuma pas toggle
+}

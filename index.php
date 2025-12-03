@@ -50,8 +50,8 @@ require __DIR__ . '/templates/default.php';
                 </div>
             </div>
             <div class="hidden lg:flex items-center gap-4">
-                <a href="/auth.php" class="btn-login border-2 border-white text-white font-medium px-12 py-[6px] rounded-full hover:bg-white hover:text-[#5465FF] transition">Login</a>
-                <a href="/auth.php" class="btn-register bg-white text-[#5465FF] font-medium px-12 py-[6px] rounded-full border-2 border-white hover:bg-transparent hover:text-white transition">Daftar</a>
+                <a href="/auth.php" class="btn-login border-2 border-white text-white font-medium px-12 py-[6px] rounded-full hover:bg-white hover:text-brand-500 transition">Login</a>
+                <a href="/auth.php" class="btn-register bg-white text-brand-500 font-medium px-12 py-[6px] rounded-full border-2 border-white hover:bg-transparent hover:text-white transition">Daftar</a>
             </div>
             <button id="menuBtn" class="btn-mobile lg:hidden text-2xl focus:outline-none">
                 <i class="fa-solid fa-bars-staggered"></i>
@@ -64,16 +64,16 @@ require __DIR__ . '/templates/default.php';
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-            <a href="#hero" class="block hover:text-blue-400">Home</a>
-            <a href="#hero" class="block hover:text-blue-400">Home</a>
-            <a href="#hero" class="block hover:text-blue-400">Home</a>
+            <a href="#hero" class="block hover:text-brand-400">Home</a>
+            <a href="#hero" class="block hover:text-brand-400">Home</a>
+            <a href="#hero" class="block hover:text-brand-400">Home</a>
             <div class="pt-4 flex flex-col gap-3">
-                <a href="/auth.php" class="border-2 border-white text-center px-10 py-[6px] rounded-full hover:bg-white hover:text-[#5465FF] transition">Login</a>
-                <a href="/auth.php" class="bg-white text-[#5465FF] text-center px-10 py-[6px] rounded-full hover:bg-transparent hover:border-2 hover:border-white hover:text-white transition">Daftar</a>
+                <a href="/auth.php" class="border-2 border-white text-center px-10 py-[6px] rounded-full hover:bg-white hover:text-brand-500 transition">Login</a>
+                <a href="/auth.php" class="bg-white text-brand-500 text-center px-10 py-[6px] rounded-full hover:bg-transparent hover:border-2 hover:border-white hover:text-white transition">Daftar</a>
             </div>
         </div>
     </nav>
-    <section id="hero" class="relative h-screen flex items-center bg-gradient-to-bl from-[#5465FF] to-[#788BFF] overflow-hidden">
+    <section id="hero" class="relative h-screen flex items-center bg-gradient-to-bl from-brand-500 to-brand-400 overflow-hidden">
         <div class="absolute inset-x-0 top-[187px] px-4 text-center z-20">
             <h1 class="text-2xl sm:text-4xl xl:text-5xl font-bold text-white leading-tight max-w-4xl mx-auto">Pantau dan Tingkatkan Konsistensi Belajarmu Secara Otomatis</h1>
         </div>
@@ -92,7 +92,7 @@ require __DIR__ . '/templates/default.php';
                 <img src="assets/img/yaya.png" class="absolute w-[400px] sm:w-[646px] h-[400px] sm:h-[646px] object-cover rounded-full top-[-60px] sm:top-[-80px]">
                 <div class="absolute top-[63%] left-1/2 -translate-x-1/2 px-3 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full border border-white/50 bg-white/10 backdrop-blur-md flex gap-2 sm:gap-3 md:gap-4">
                     <a href="#">
-                        <button class="px-4 py-1 min-w-[110px] sm:px-7 sm:py-2 sm:min-w-[145px] md:px-10 md:py-2.5 md:min-w-[160px] whitespace-nowrap rounded-full bg-[#5465FF] text-white text-center text-[13px] sm:text-[15px] md:text-[18px] font-medium hover:bg-gray-100 hover:text-[#5465FF] transition">
+                        <button class="px-4 py-1 min-w-[110px] sm:px-7 sm:py-2 sm:min-w-[145px] md:px-10 md:py-2.5 md:min-w-[160px] whitespace-nowrap rounded-full bg-brand-500 text-white text-center text-[13px] sm:text-[15px] md:text-[18px] font-medium hover:bg-gray-100 hover:text-brand-500 transition">
                             Mulai Sekarang
                         </button>
                     </a>
@@ -111,13 +111,13 @@ require __DIR__ . '/templates/default.php';
         <div class="container mx-auto px-8 md:px-6">
 <!-- KEUNGGULAN JUDUL -->
             <div class="flex items-center gap-3 mb-10">
-                <div class="h-10 w-10 bg-[#788BFF] rounded-xl flex items-center justify-center text-white font-bold">
+                <div class="h-10 w-10 bg-brand-400 rounded-xl flex items-center justify-center text-white font-bold">
                     <i class="fa-solid fa-crown"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-[#788BFF]">Keungulan Platform Kami</h2>
+                <h2 class="text-2xl font-bold text-brand-400">Keungulan Platform Kami</h2>
             </div>
 <!-- KEUNGGULAN ISI -->
-            <div class="rounded-2xl border-[8px] border-[#9BB1FF] bg-gradient-to-br from-[#788BFF] to-[#9BB1FF] pt-20 pb-20 px-10 min-h-[420px] shadow-lg">
+            <div class="rounded-2xl border-[8px] border-[#9BB1FF] bg-gradient-to-br from-brand-400 to-[#9BB1FF] pt-20 pb-20 px-10 min-h-[420px] shadow-lg">
 <!-- KEUNGGULAN ISI -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-white py-9">
                     <div class="text-center flex flex-col items-center max-w-xs mx-auto">
@@ -162,14 +162,14 @@ require __DIR__ . '/templates/default.php';
         <div class="container mx-auto px-8 md:px-6">
 <!-- CARA KERJA JUDUL -->
             <div class="flex items-center gap-3 mb-10">
-                <div class="h-10 w-10 bg-[#788BFF] rounded-xl flex items-center justify-center text-white font-bold">
+                <div class="h-10 w-10 bg-brand-400 rounded-xl flex items-center justify-center text-white font-bold">
                     <i class="fa-solid fa-compass"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-[#788BFF]">How to Use</h2>
+                <h2 class="text-2xl font-bold text-brand-400">How to Use</h2>
             </div>
 <!-- CARA KERJA ISI -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-gradient-to-br from-[#788BFF] to-[#9BB1FF] p-8 rounded-xl shadow text-white">
+                <div class="bg-gradient-to-br from-brand-400 to-[#9BB1FF] p-8 rounded-xl shadow text-white">
                     <div class="w-14 h-14 bg-white/20 border border-white rounded-xl flex items-center justify-center text-3xl font-bold mb-4">
                         <p>1</p>
                     </div>
@@ -178,7 +178,7 @@ require __DIR__ . '/templates/default.php';
                         Daftarkan diri kamu atau login untuk mulai menyimpan progres belajar.
                     </p>
                 </div>
-                <div class="bg-gradient-to-br from-[#788BFF] to-[#9BB1FF] p-8 rounded-xl shadow text-white">
+                <div class="bg-gradient-to-br from-brand-400 to-[#9BB1FF] p-8 rounded-xl shadow text-white">
                     <div class="w-14 h-14 bg-white/20 border border-white rounded-xl flex items-center justify-center text-3xl font-bold mb-4">
                         <p>2</p>
                     </div>
@@ -187,7 +187,7 @@ require __DIR__ . '/templates/default.php';
                         Isi profil kamu buat verif kalo kamu itu beneran mau belajar
                     </p>
                 </div>
-                <div class="bg-gradient-to-br from-[#788BFF] to-[#9BB1FF] p-8 rounded-xl shadow text-white">
+                <div class="bg-gradient-to-br from-brand-400 to-[#9BB1FF] p-8 rounded-xl shadow text-white">
                     <div class="w-14 h-14 bg-white/20 border border-white rounded-xl flex items-center justify-center text-3xl font-bold mb-4">
                         <p>3</p>
                     </div>
@@ -198,14 +198,14 @@ require __DIR__ . '/templates/default.php';
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gradient-to-br from-[#788BFF] to-[#9BB1FF] p-10 rounded-xl shadow text-white">
+                <div class="bg-gradient-to-br from-brand-400 to-[#9BB1FF] p-10 rounded-xl shadow text-white">
                     <div class="w-14 h-14 bg-white/20 border border-white rounded-xl flex items-center justify-center text-3xl font-bold mb-4">
                         <p>4</p>
                     </div>
                     <h3 class="text-[20px] font-semibold mb-2">Nyalakan Pengingat</h3>
                     <p class="text-[18px] font-light">Aktifkan notifikasi agar kamu selalu ingat untuk belajar setiap hari.</p>
                 </div>
-                <div class="bg-gradient-to-br from-[#788BFF] to-[#9BB1FF] p-10 rounded-xl shadow text-white">
+                <div class="bg-gradient-to-br from-brand-400 to-[#9BB1FF] p-10 rounded-xl shadow text-white">
                     <div class="w-14 h-14 bg-white/20 border border-white rounded-xl flex items-center justify-center text-3xl font-bold mb-4">
                         <p>5</p>
                     </div>
@@ -218,14 +218,14 @@ require __DIR__ . '/templates/default.php';
     <section id="faq" class="mt-[45px] mb-[45px]">
         <div class="container mx-auto px-8 md:px-6">
             <div class="flex items-center gap-3 mb-10">
-                <div class="h-10 w-10 bg-[#788BFF] rounded-xl flex items-center justify-center text-white font-bold">
+                <div class="h-10 w-10 bg-brand-400 rounded-xl flex items-center justify-center text-white font-bold">
                     <i class="fa-solid fa-question"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-[#788BFF]">FAQ</h2>
+                <h2 class="text-2xl font-bold text-brand-400">FAQ</h2>
             </div>
             <div class="flex flex-col md:flex-row gap-14">
                 <div class="basis-3/4 space-y-8">
-                    <div class="faq-item bg-[#788BFF] p-6 rounded-xl cursor-pointer transition">
+                    <div class="faq-item bg-brand-400 p-6 rounded-xl cursor-pointer transition">
                         <button class="faq-btn w-full text-left text-white font-semibold text-[20px] flex justify-between items-center">
                             Apakah Bisa Di Sodok Pake Garpu?
                             <span class="text-2xl font-bold"><i class="fa-solid fa-caret-right"></i></span>
@@ -234,7 +234,7 @@ require __DIR__ . '/templates/default.php';
                             Ya Sangat Bisa Sekali Disodok Pake Garpu Dan Tumbler KAI
                         </div>
                     </div>
-                    <div class="faq-item bg-[#788BFF] p-6 rounded-xl cursor-pointer transition">
+                    <div class="faq-item bg-brand-400 p-6 rounded-xl cursor-pointer transition">
                         <button class="faq-btn w-full text-left text-white font-semibold text-[20px] flex justify-between items-center">
                             Apakah Bisa Di Sodok Pake Garpu?
                             <span class="text-2xl font-bold"><i class="fa-solid fa-caret-right"></i></span>
@@ -243,7 +243,7 @@ require __DIR__ . '/templates/default.php';
                             Ya Sangat Bisa Sekali Disodok Pake Garpu Dan Tumbler KAI
                         </div>
                     </div>
-                    <div class="faq-item bg-[#788BFF] p-6 rounded-xl cursor-pointer transition">
+                    <div class="faq-item bg-brand-400 p-6 rounded-xl cursor-pointer transition">
                         <button class="faq-btn w-full text-left text-white font-semibold text-[20px] flex justify-between items-center">
                             Apakah Bisa Di Sodok Pake Garpu?
                             <span class="text-2xl font-bold"><i class="fa-solid fa-caret-right"></i></span>
@@ -253,7 +253,7 @@ require __DIR__ . '/templates/default.php';
                         </div>
                     </div>
                 </div>
-                <div class="basis-1/4 bg-gradient-to-br from-[#5465FF] to-[#788BFF] p-12 rounded-2xl text-white flex flex-col text-center justify-center">
+                <div class="basis-1/4 bg-gradient-to-br from-brand-500 to-brand-400 p-12 rounded-2xl text-white flex flex-col text-center justify-center">
                     <h3 class="text-[20px] font-bold mb-6">Hubungi Kami</h3>
                     <p class="text-white/90 mb-6 text-[16px]">
                         <span class="font-semibold text-[18px]">Email:</span><br>
@@ -263,7 +263,7 @@ require __DIR__ . '/templates/default.php';
                         <span class="font-semibold text-[18px]">Telepon</span><br>
                         +62 000-0000-0000
                     </p>
-                    <button class="px-8 py-2 bg-white text-[#5465FF] font-semibold rounded-full mx-auto hover:bg-gray-100 shadow">
+                    <button class="px-8 py-2 bg-white text-brand-500 font-semibold rounded-full mx-auto hover:bg-gray-100 shadow">
                         Contact Me
                     </button>
                 </div>
@@ -272,19 +272,19 @@ require __DIR__ . '/templates/default.php';
     </section>
     <footer class="bg-[#E4EEFF] text-white">
         <div class="container mx-auto px-8 md:px-6 py-5 flex flex-col items-center text-center gap-10">
-            <nav class="flex flex-wrap justify-center gap-3 text-[#5465FF] text-[16px] font-medium">
+            <nav class="flex flex-wrap justify-center gap-3 text-brand-500 text-[16px] font-medium">
                 <a href="#hero" class="hover:text-black transition">Home</a>
                 <a href="#keunggulan" class="hover:text-black transition">Keunggulan Kami</a>
                 <a href="#cara-kerja" class="hover:text-black transition">Cara Kerja</a>
                 <a href="#faq" class="hover:text-black transition">FAQ</a>
             </nav>
             <div class="flex justify-center gap-4">
-                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-white bg-[#5465FF] hover:bg-white hover:text-[#5465FF] transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-white bg-[#5465FF] hover:bg-white hover:text-[#5465FF] transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-white bg-[#5465FF] hover:bg-white hover:text-[#5465FF] transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-white bg-brand-500 hover:bg-white hover:text-brand-500 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-white bg-brand-500 hover:bg-white hover:text-brand-500 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full text-white bg-brand-500 hover:bg-white hover:text-brand-500 transition"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-        <div class="bg-[#5465FF] py-2 text-[14px] text-white/90">
+        <div class="bg-brand-500 py-2 text-[14px] text-white/90">
             <div class="container mx-auto px-6 text-left">
                 <p>© 2025 MINE - Monitoring & Improvement of Note-based Education. All rights reserved.</p>
             </div>
@@ -313,8 +313,8 @@ require __DIR__ . '/templates/default.php';
         });
 
         document.querySelectorAll(".faq-item").forEach(i => {
-        i.classList.remove("bg-[#5465FF]");
-        i.classList.add("bg-[#788BFF]");
+        i.classList.remove("bg-brand-500");
+        i.classList.add("bg-brand-400");
         });
 
         if (!isOpen) {
@@ -323,8 +323,8 @@ require __DIR__ . '/templates/default.php';
         icon.classList.remove("fa-caret-right");
         icon.classList.add("fa-caret-down");
 
-        item.classList.remove("bg-[#788BFF]");
-        item.classList.add("bg-[#5465FF]");
+        item.classList.remove("bg-brand-400");
+        item.classList.add("bg-brand-500");
         }
     });
     });

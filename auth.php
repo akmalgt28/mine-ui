@@ -3,7 +3,7 @@
 require __DIR__ . '/templates/default.php';
 ?>
 
-<body class="flex flex-col md:flex-row min-h-screen overflow-x-hidden bg-gradient-to-r from-[#788bff] to-[#5465ff] relative">
+<body class="flex flex-col md:flex-row min-h-screen overflow-x-hidden bg-gradient-to-r from-brand-400 to-brand-500 relative">
 
   <!-- Logo -->
   <div class="absolute top-6 left-6 md:top-10 md:left-10 z-20">
@@ -31,14 +31,14 @@ require __DIR__ . '/templates/default.php';
           <label for="email" class="text-base text-black">Email</label>
           <input type="email" id="email" name="email" placeholder="mamal@gmail.com"
             class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                   w-full focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                   w-full focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
         </div>
 
         <div class="flex flex-col space-y-2">
           <label for="password" class="text-base text-black">Password</label>
           <input type="password" name="password" id="password" placeholder="••••••••"
             class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                   w-full focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                   w-full focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
         </div>
 
         <div class="flex items-center justify-between w-full">
@@ -48,13 +48,13 @@ require __DIR__ . '/templates/default.php';
             <span class="text-base select-none">Ingatkan saya</span>
           </label>
 
-          <a href="#" class="text-[#5465ff] text-base hover:underline">
+          <a href="#" class="text-brand-500 text-base hover:underline">
             Lupa password?
           </a>
         </div>
 
         <button type="button"
-          class="mt-8 w-full bg-[#5465ff] hover:bg-[#788bff] text-white py-3 rounded-[10px] font-medium transition">
+          class="mt-8 w-full bg-brand-500 hover:bg-brand-400 text-white py-3 rounded-[10px] font-medium transition">
           Masuk
         </button>
       </form>
@@ -96,14 +96,14 @@ require __DIR__ . '/templates/default.php';
               <label for="namadepan" class="text-base text-black">Nama Depan</label>
               <input type="text" id="namadepan" name="namadepan" placeholder="Nama Depan"
                 class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                       focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                       focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
             </div>
 
             <div class="flex flex-col space-y-2 w-full sm:w-1/2">
               <label for="namabelakang" class="text-base text-black">Nama Belakang</label>
               <input type="text" id="namabelakang" name="namadepan" placeholder="Nama Belakang"
                 class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                       focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                       focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
             </div>
           </div>
 
@@ -111,14 +111,14 @@ require __DIR__ . '/templates/default.php';
             <label class="text-base text-black">Email</label>
             <input type="email" id="email" name="email" placeholder="Email"
               class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                     focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                     focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
           </div>
 
           <div class="flex flex-col space-y-2">
             <label class="text-base text-black">Password</label>
             <input type="password" placeholder="Password"
               class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                     focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                     focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
           </div>
 
           <div class="flex flex-col space-y-5 w-full mt-2">
@@ -127,14 +127,14 @@ require __DIR__ . '/templates/default.php';
                 class="mt-1 w-5 h-5 appearance-none rounded-[5px] text-brand-500 cursor-pointer transition-all duration-200" />
               <span class="text-base leading-relaxed select-none">
                 Saya menyetujui 
-                <a href="#" class="text-[#5465ff] hover:underline">Syarat & Ketentuan</a> 
+                <a href="#" class="text-brand-500 hover:underline">Syarat & Ketentuan</a> 
                 serta 
-                <a href="#" class="text-[#5465ff] hover:underline">Kebijakan Privasi</a>.
+                <a href="#" class="text-brand-500 hover:underline">Kebijakan Privasi</a>.
               </span>
             </label>
 
             <button type="button"
-              class="w-full bg-[#5465ff] hover:bg-[#788bff] text-white py-3 rounded-[10px] font-medium transition">
+              class="w-full bg-brand-500 hover:bg-brand-400 text-white py-3 rounded-[10px] font-medium transition">
               Daftar
             </button>
           </div>
@@ -162,14 +162,14 @@ require __DIR__ . '/templates/default.php';
             <label for="email" class="text-base text-black">Email</label>
             <input type="email" id="email" name="email" placeholder="mamal@gmail.com"
               class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                     w-full focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                     w-full focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
           </div>
 
           <div class="flex flex-col space-y-2">
             <label for="password" class="text-base text-black">Password</label>
             <input type="password" name="password" placeholder="••••••••"
               class="h-12 md:h-14 rounded-[10px] border border-gray-300 px-4 text-gray-700 text-lg
-                     w-full focus:border-[#5465ff] focus:ring-2 focus:ring-[#5465ff]/40 outline-none transition-all duration-200" />
+                     w-full focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none transition-all duration-200" />
           </div>
 
           <div class="flex items-center justify-between w-full">
@@ -179,11 +179,11 @@ require __DIR__ . '/templates/default.php';
               <span class="text-base select-none">Ingatkan saya</span>
             </label>
 
-            <a href="#" class="text-[#5465ff] text-base hover:underline">Lupa password?</a>
+            <a href="#" class="text-brand-500 text-base hover:underline">Lupa password?</a>
           </div>
 
           <button type="button"
-            class="mt-8 w-full bg-[#5465ff] hover:bg-[#788bff] text-white py-3 rounded-[10px] font-medium transition">
+            class="mt-8 w-full bg-brand-500 hover:bg-brand-400 text-white py-3 rounded-[10px] font-medium transition">
             Masuk
           </button>
         </form>`;
