@@ -10,7 +10,7 @@ $menus = [
   ],
   [
     'label'    => 'Profile',
-    'href'     => '/apps/dashboard.php',
+    'href'     => '/profile.php',
     'icon'     => 'fa-user',
     'iconSize' => 'text-base',
   ],

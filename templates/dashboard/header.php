@@ -26,8 +26,8 @@ if (!isset($title)) {
 
 </head>
 
-<body class="dark:bg-background-dark">
+<body class="bg-background dark:bg-background-dark">
 <?php require __DIR__ . '/sidebar.php'; ?>
 <?php require __DIR__ . '/navbar.php'; ?>
 
-<main class="layout-main p-6 dark:bg-background-dark">
+<main class="layout-main p-6 bg-background dark:bg-background-dark">

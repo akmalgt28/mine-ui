@@ -44,7 +44,7 @@ require __DIR__ . '/templates/default.php';
         <div class="flex items-center justify-between w-full">
           <label class="flex items-center space-x-2 text-gray-700 ">
             <input type="checkbox"
-              class="w-5 h-5 appearance-none rounded-[5px] borde text-brand-500 cursor-pointer transition-all" />
+              class="w-5 h-5 appearance-none rounded-[5px] border text-brand-500 cursor-pointer transition-all" />
             <span class="text-base select-none">Ingatkan saya</span>
           </label>
 
