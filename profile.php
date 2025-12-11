@@ -61,7 +61,7 @@ require __DIR__ . '/templates/dashboard/header.php';
                                 </div>
                                 <div>
                                     <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
-                                        last Name</label>
+                                        Last Name</label>
                                     <input type="text"  class="w-full px-4 py-3 rounded-xl text-textcolor 
                                                             dark:text-textcolor-dark border border-bordercolor 
                                                             dark:border-bordercolor-dark bg-background dark:bg-background-dark 
@@ -99,6 +99,33 @@ require __DIR__ . '/templates/dashboard/header.php';
                                                         dark:text-textcolor-dark border border-bordercolor 
                                                         dark:border-bordercolor-dark bg-background dark:bg-background-dark 
                                                         focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                            </div>
+                            <div>
+                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
+                                    Pelajaran Pilihan
+                                </label>
+                                <div class="relative w-full" id="multi-select">
+                                    <button type="button" id="ms-toggle" class="w-full bg-background dark:bg-background-dark border 
+                                                            border-bordercolor dark:border-bordercolor-dark rounded-xl px-4 py-3 flex 
+                                                            items-center justify-between">
+                                        <div class="flex flex-wrap gap-1" id="ms-chips"></div>
+                                        <span class="text-textcolor-muted dark:text-textcolor-muted-dark" id="ms-placeholder">
+                                            Pilih Beberapa
+                                        </span>
+                                        <span id="ms-count" class="text-sm text-textcolor-muted ml-2"></span>
+                                    </button>
+                                    <div id="ms-dropdown" class="hidden absolute left-0 top-full mt-2 w-full bg-card dark:bg-card-dark border border-bordercolor dark:border-bordercolor-dark rounded-xl shadow-lg z-50">
+                                        <div class="p-3 border-b border-bordercolor dark:border-bordercolor-dark">
+                                            <input id="ms-search" type="text" class="text-textcolor dark:text-textcolor-dark w-full px-3 rounded-lg bg-background dark:bg-background-dark border border-bordercolor dark:border-bordercolor-dark" placeholder="Cari...">
+                                        </div>
+                                        <ul id="ms-options" class="max-h-60 overflow-auto text-textcolor dark:text-textcolor-dark"></ul>
+                                        <div class="flex items-center justify-between p-3 border-t border-bordercolor dark:border-bordercolor-dark">
+                                            <button id="ms-clear" type="button" class="text-red-500 text-sm">Clear</button>
+                                            <button id="ms-cancel" type="button" class="text-sm text-textcolor dark:text-textcolor-dark">Close</button>
+                                        </div>
+                                    </div>
+                                    <select name="pelajaran[]" id="ms-hidden-select" multiple class="hidden"></select>
+                                </div>
                             </div>
                             <div class="pt-6">
                                 <button class="px-10 py-3 bg-brand-500 text-white rounded-xl">Save</button>
@@ -243,4 +270,135 @@ function confirmDelete() {
   alert("Akun berhasil dihapus (simulasi) ❌");
   closeDeleteModal();
 }
+(function () {
+
+    const OPTIONS = [
+        { id: 'gaming', label: 'Gaming' },
+        { id: 'coding', label: 'Coding' },
+        { id: 'reading', label: 'Reading' },
+        { id: 'music', label: 'Music' },
+        { id: 'sport', label: 'Sport' }
+    ];
+
+    const root = document.getElementById('multi-select');
+    const toggle = root.querySelector('#ms-toggle');
+    const dropdown = root.querySelector('#ms-dropdown');
+    const optionsList = root.querySelector('#ms-options');
+    const chipsContainer = root.querySelector('#ms-chips');
+    const placeholder = root.querySelector('#ms-placeholder');
+    const countEl = root.querySelector('#ms-count');
+    const hiddenSelect = root.querySelector('#ms-hidden-select');
+    const clearBtn = root.querySelector('#ms-clear');
+    const cancelBtn = root.querySelector('#ms-cancel');
+    const searchInput = root.querySelector('#ms-search');
+
+    let selected = new Set();
+    let filtered = OPTIONS.slice();
+    let open = false;
+
+    function renderOptions() {
+        optionsList.innerHTML = '';
+        filtered.forEach(opt => {
+            const li = document.createElement('li');
+            li.className = "flex items-center justify-between px-4 py-2 hover:bg-background dark:hover:bg-background-dark cursor-pointer";
+
+            const left = document.createElement('div');
+            left.className = "flex items-center gap-3";
+
+            const cb = document.createElement('input');
+            cb.type = "checkbox";
+            cb.className = "h-4 w-4 rounded-[5px] bg-background dark:bg-background-dark text-brand-500 transition-all";
+            cb.checked = selected.has(opt.id);
+
+            cb.addEventListener("change", () => toggleSelect(opt.id));
+
+            const label = document.createElement('span');
+            label.textContent = opt.label;
+
+            left.appendChild(cb);
+            left.appendChild(label);
+            li.appendChild(left);
+
+            li.addEventListener("click", e => {
+                if (e.target.tagName.toLowerCase() === "input") return;
+                toggleSelect(opt.id);
+            });
+
+            optionsList.appendChild(li);
+        });
+    }
+
+    function renderChips() {
+        chipsContainer.innerHTML = '';
+        const arr = Array.from(selected);
+
+        if (arr.length === 0) {
+            placeholder.style.display = '';
+            countEl.textContent = '';
+        } else {
+            placeholder.style.display = 'none';
+            countEl.textContent = arr.length + " selected";
+
+            arr.forEach(id => {
+                const opt = OPTIONS.find(o => o.id === id);
+                if (!opt) return;
+
+                const chip = document.createElement('span');
+                chip.className = "px-2 py-1 bg-brand-500 text-white rounded-lg text-xs";
+                chip.textContent = opt.label;
+
+                chipsContainer.appendChild(chip);
+            });
+        }
+
+        hiddenSelect.innerHTML = '';
+        arr.forEach(id => {
+            const o = document.createElement('option');
+            o.value = id;
+            o.selected = true;
+            hiddenSelect.appendChild(o);
+        });
+    }
+
+    function toggleSelect(id) {
+        selected.has(id) ? selected.delete(id) : selected.add(id);
+        renderOptions();
+        renderChips();
+    }
+
+    function openDropdown() {
+        dropdown.classList.remove('hidden');
+        open = true;
+        filtered = OPTIONS.slice();
+        renderOptions();
+        searchInput.value = '';
+    }
+
+    function closeDropdown() {
+        dropdown.classList.add('hidden');
+        open = false;
+    }
+
+    toggle.addEventListener("click", () => open ? closeDropdown() : openDropdown());
+    cancelBtn.addEventListener("click", closeDropdown);
+    clearBtn.addEventListener("click", () => {
+        selected.clear();
+        renderOptions();
+        renderChips();
+    });
+
+    document.addEventListener("click", e => {
+        if (!root.contains(e.target) && open) closeDropdown();
+    });
+
+    searchInput.addEventListener("input", e => {
+        const q = e.target.value.toLowerCase();
+        filtered = OPTIONS.filter(o => o.label.toLowerCase().includes(q));
+        renderOptions();
+    });
+
+    renderOptions();
+    renderChips();
+
+})();
 </script>
