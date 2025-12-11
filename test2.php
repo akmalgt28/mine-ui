@@ -27,6 +27,7 @@ require __DIR__ . '/templates/dashboard/header.php';
                 </li>
             </ul>
         </div>
+
 <!-- MOBILE TABS -->
         <div class="sm:hidden">
             <select id="mobileTab" onchange="setTab(this.value)" class="block w-full px-4 py-3 rounded-lg bg-card dark:bg-card-dark text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark">
@@ -36,10 +37,14 @@ require __DIR__ . '/templates/dashboard/header.php';
             </select>
         </div>
     </div>
+
     <div class="mt-6">
+
+<!-- ===================== PROFILE CONTENT ===================== -->
         <div id="content-profile">
             <section class="min-h-screen w-full px-4 py-6 sm:px-6 sm:py-8 lg:px-16 lg:py-14 bg-background dark:bg-background-dark">
                 <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+
                     <div>
                         <h2 class="text-xl font-semibold text-textcolor dark:text-textcolor-dark mb-2">
                             Profile Setting
@@ -48,228 +53,263 @@ require __DIR__ . '/templates/dashboard/header.php';
                             Pengaturan Dasar Akun
                         </p>
                     </div>
+
                     <div>
                         <form class="space-y-6">
+
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                 <div>
-                                    <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
-                                        First Name</label>
-                                    <input type="text" class="w-full px-4 py-3 rounded-xl text-textcolor 
-                                                            dark:text-textcolor-dark border border-bordercolor 
-                                                            dark:border-bordercolor-dark bg-background dark:bg-background-dark 
-                                                            focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                    <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">First Name</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 focus:ring-2">
                                 </div>
+
                                 <div>
-                                    <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
-                                        Last Name</label>
-                                    <input type="text"  class="w-full px-4 py-3 rounded-xl text-textcolor 
-                                                            dark:text-textcolor-dark border border-bordercolor 
-                                                            dark:border-bordercolor-dark bg-background dark:bg-background-dark 
-                                                            focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                    <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">Last Name</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 focus:ring-2">
                                 </div>
                             </div>
+
                             <div>
-                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
-                                    Email Address</label>
-                                <input type="email" class="w-full px-4 py-3 rounded-xl text-textcolor 
-                                                        dark:text-textcolor-dark border border-bordercolor 
-                                                        dark:border-bordercolor-dark bg-background dark:bg-background-dark 
-                                                        focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">Email Address</label>
+                                <input type="email"
+                                    class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 focus:ring-2">
                             </div>
+
                             <div>
-                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
-                                    Username</label>
-                                <input type="text" class="w-full px-4 py-3 rounded-xl text-textcolor 
-                                                        dark:text-textcolor-dark border border-bordercolor 
-                                                        dark:border-bordercolor-dark bg-background dark:bg-background-dark 
-                                                        focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">Username</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 focus:ring-2">
                             </div>
+
                             <div>
-                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
-                                    Phone Number</label>
-                                <input type="tel" class="w-full px-4 py-3 rounded-xl text-textcolor 
-                                                        dark:text-textcolor-dark border border-bordercolor 
-                                                        dark:border-bordercolor-dark bg-background dark:bg-background-dark 
-                                                        focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">Phone Number</label>
+                                <input type="tel"
+                                    class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 focus:ring-2">
                             </div>
+
                             <div>
-                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
-                                    Bio</label>
-                                <input type="text" class="w-full px-4 py-3 rounded-xl text-textcolor 
-                                                        dark:text-textcolor-dark border border-bordercolor 
-                                                        dark:border-bordercolor-dark bg-background dark:bg-background-dark 
-                                                        focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">Bio</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 focus:ring-2">
                             </div>
+
+
+<!-- ================= MULTIPLE SELECT (SUDAH DIBENERIN) ================= -->
                             <div>
                                 <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">
                                     Pelajaran Pilihan
                                 </label>
-                                <div class="relative w-full" id="multi-select">
-                                    <button type="button" id="ms-toggle" class="w-full bg-background dark:bg-background-dark border 
-                                                            border-bordercolor dark:border-bordercolor-dark rounded-xl px-4 py-3 flex 
-                                                            items-center justify-between">
+
+                                <div class="relative w-full" id="multi-select-root">
+
+                                    <!-- TOGGLE -->
+                                    <button type="button" id="ms-toggle"
+                                        class="w-full bg-background dark:bg-background-dark border border-bordercolor dark:border-bordercolor-dark rounded-xl px-4 py-3 flex items-center justify-between">
+                                        
                                         <div class="flex flex-wrap gap-1" id="ms-chips"></div>
+
                                         <span class="text-textcolor-muted dark:text-textcolor-muted-dark" id="ms-placeholder">
-                                            Pilih Beberapa
+                                            Pilih beberapa...
                                         </span>
+
                                         <span id="ms-count" class="text-sm text-textcolor-muted ml-2"></span>
                                     </button>
-                                    <div id="ms-dropdown" class="hidden absolute left-0 top-full mt-2 w-full bg-card dark:bg-card-dark border border-bordercolor dark:border-bordercolor-dark rounded-xl shadow-lg z-50">
+
+                                    <!-- DROPDOWN -->
+                                    <div id="ms-dropdown"
+                                        class="hidden absolute left-0 top-full mt-2 w-full 
+                                               bg-card dark:bg-card-dark 
+                                               border border-bordercolor dark:border-bordercolor-dark 
+                                               rounded-xl shadow-lg z-50">
+
                                         <div class="p-3 border-b border-bordercolor dark:border-bordercolor-dark">
-                                            <input id="ms-search" type="text" class="text-textcolor dark:text-textcolor-dark w-full px-3 rounded-lg bg-background dark:bg-background-dark border border-bordercolor dark:border-bordercolor-dark" placeholder="Cari...">
+                                            <input id="ms-search" type="text"
+                                                class="text-textcolor dark:text-textcolor-dark w-full px-3 py-2 rounded-lg bg-background dark:bg-background-dark border border-bordercolor dark:border-bordercolor-dark"
+                                                placeholder="Cari...">
                                         </div>
+
                                         <ul id="ms-options" class="max-h-60 overflow-auto text-textcolor dark:text-textcolor-dark"></ul>
+
                                         <div class="flex items-center justify-between p-3 border-t border-bordercolor dark:border-bordercolor-dark">
                                             <button id="ms-clear" type="button" class="text-red-500 text-sm">Clear</button>
                                             <button id="ms-cancel" type="button" class="text-sm text-textcolor dark:text-textcolor-dark">Close</button>
                                         </div>
                                     </div>
-                                    <select name="pelajaran[]" id="ms-hidden-select" multiple class="hidden"></select>
+
+                                    <select name="hobi[]" id="ms-hidden-select" multiple class="hidden"></select>
                                 </div>
                             </div>
+<!-- ================= END MULTIPLE SELECT ================= -->
+
                             <div class="pt-6">
                                 <button class="px-10 py-3 bg-brand-500 text-white rounded-xl">Save</button>
                             </div>
+
                         </form>
                     </div>
+
                 </div>
             </section>
         </div>
+
+<!-- ===================== NOTIF CONTENT ===================== -->
         <div id="content-notif" class="hidden">
             <section class="min-h-screen w-full px-4 py-6 sm:px-6 sm:py-8 lg:px-16 lg:py-14 bg-background dark:bg-background-dark">
                 <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+
                     <div>
                         <h2 class="text-xl font-semibold text-textcolor dark:text-textcolor-dark mb-2">
                             Notification Setting
                         </h2>
-                        <p class="mb-4 text-textcolor-muted dark:text-textcolor-muted-dark leading-relaxed max-w-sm">
+                        <p class="mb-4 text-textcolor-muted dark:text-textcolor-muted-dark max-w-sm">
                             Atur Notifikasi Yang Ingin Kamu Terima
                         </p>
                     </div>
+
                     <div>
                         <form class="space-y-6">
-                            <label class="flex items-center justify-between gap-4 p-4 rounded-xl border border-bordercolor dark:border-bordercolor-dark bg-card dark:bg-card-dark cursor-pointer">
+                            <label class="flex items-center justify-between gap-4 p-4 rounded-xl border border-bordercolor dark:border-bordercolor-dark bg-card dark:bg-card-dark">
                                 <div>
                                     <p class="font-medium text-textcolor dark:text-textcolor-dark">Email Notification</p>
-                                    <p class="text-textcolor dark:text-textcolor-dark">Notifikasi Melalui Email</p>
+                                    <p class="text-textcolor-muted dark:text-textcolor-muted-dark">Notifikasi Melalui Email</p>
                                 </div>
-                                <input type="checkbox" class="w-5 h-5 rounded-[5px] bg-background dark:bg-background-dark text-brand-500 transition-all">
+                                <input type="checkbox" class="w-5 h-5 rounded-[5px]">
                             </label>
-                            <label class="flex items-center justify-between gap-4 p-4 rounded-xl border border-bordercolor dark:border-bordercolor-dark bg-card dark:bg-card-dark cursor-pointer">
+
+                            <label class="flex items-center justify-between gap-4 p-4 rounded-xl border border-bordercolor dark:border-bordercolor-dark bg-card dark:bg-card-dark">
                                 <div>
                                     <p class="font-medium text-textcolor dark:text-textcolor-dark">Push Notification</p>
-                                    <p class="text-textcolor dark:text-textcolor-dark">Notifikasi Langsung ke Device</p>
+                                    <p class="text-textcolor-muted dark:text-textcolor-muted-dark">Notifikasi Langsung ke Device</p>
                                 </div>
-                                <input type="checkbox" class="w-5 h-5 rounded-[5px] bg-background dark:bg-background-dark text-brand-500 transition-all">
+                                <input type="checkbox" class="w-5 h-5 rounded-[5px]">
                             </label>
+
                             <div class="pt-6">
                                 <button class="px-10 py-3 bg-brand-500 text-white rounded-xl">Save</button>
                             </div>
                         </form>
                     </div>
+
                 </div>
             </section>
         </div>
+
+<!-- ===================== SECURITY CONTENT ===================== -->
         <div id="content-security" class="hidden">
             <section class="min-h-screen w-full px-4 py-6 sm:px-6 sm:py-8 lg:px-16 lg:py-14 bg-background dark:bg-background-dark">
                 <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+
                     <div>
                         <h2 class="text-xl font-semibold text-textcolor dark:text-textcolor-dark mb-2">
                             Security Setting
                         </h2>
-                        <p class="mb-4 text-textcolor-muted dark:text-textcolor-muted-dark leading-relaxed max-w-sm">
+                        <p class="mb-4 text-textcolor-muted dark:text-textcolor-muted-dark max-w-sm">
                             Password & Keamanan Akun
                         </p>
                     </div>
+
                     <div>
                         <form class="space-y-6">
+
                             <div>
-                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">Old Password</label>
-                                <input type="email" class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                <label class="block mb-2 text-sm">Old Password</label>
+                                <input type="password" class="w-full px-4 py-3 rounded-xl border bg-background dark:bg-background-dark">
                             </div>
+
                             <div>
-                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">New Password</label>
-                                <input type="text" class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                <label class="block mb-2 text-sm">New Password</label>
+                                <input type="password" class="w-full px-4 py-3 rounded-xl border bg-background dark:bg-background-dark">
                             </div>
+
                             <div>
-                                <label class="block mb-2 text-sm text-textcolor dark:text-textcolor-dark">Confirm New Password</label>
-                                <input type="text" class="w-full px-4 py-3 rounded-xl text-textcolor dark:text-textcolor-dark border border-bordercolor dark:border-bordercolor-dark bg-background dark:bg-background-dark focus:border-brand-500 dark:focus:border-brand-500 focus:ring-2">
+                                <label class="block mb-2 text-sm">Confirm Password</label>
+                                <input type="password" class="w-full px-4 py-3 rounded-xl border bg-background dark:bg-background-dark">
                             </div>
+
                             <div class="pt-6 flex justify-between">
-                                <button class="px-10 py-3 bg-brand-500 text-white rounded-xl" data-modal-target="popup-modal" data-modal-toggle="popup-modal">Save</button>
+                                <button class="px-10 py-3 bg-brand-500 text-white rounded-xl">Save</button>
                                 <button type="button" onclick="openDeleteModal()" class="px-8 py-3 bg-red-600 text-white rounded-xl">Delete Account</button>
                             </div>
-                            
+
                         </form>
                     </div>
+
                 </div>
             </section>
         </div>
+
     </div>
 </div>
+
+
+<!-- DELETE MODAL -->
 <div id="popup-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
     <div class="bg-background p-6 rounded-xl max-w-md w-full text-center">
         <h3 class="mb-4 font-semibold">Masukkan Password</h3>
-        <input type="password" id="deletePassword" class="w-full px-4 py-3 border rounded-xl mb-2">
+        <input type="password" id="deletePassword" class="w-full px-4 py-3 border rounded-xl mb-1">
+
+        <p id="deleteError" class="text-red-500 text-sm hidden">Password minimal 6 karakter.</p>
+
         <div class="flex justify-center gap-4 mt-4">
-            <button onclick="confirmDelete()" class="px-6 py-2 bg-red-600 text-white rounded-xl">
-                Yes, Delete
-            </button>
+            <button onclick="confirmDelete()" class="px-6 py-2 bg-red-600 text-white rounded-xl">Yes, Delete</button>
             <button onclick="closeDeleteModal()" class="px-6 py-2 border rounded-xl">Cancel</button>
         </div>
     </div>
 </div>
-<script>
-  const tabs = ['profile', 'notif', 'security'];
-  const storageKey = 'activeTabSettings';
 
-  function setTab(tab) {
+
+<!-- ========================= JAVASCRIPT ========================= -->
+
+<script>
+const tabs = ['profile', 'notif', 'security'];
+const storageKey = 'activeTabSettings';
+
+function setTab(tab) {
     localStorage.setItem(storageKey, tab);
 
     tabs.forEach(item => {
-      document.getElementById('content-' + item).classList.add('hidden');
-
-      const btn = document.getElementById('tab-' + item);
-      if (btn) btn.classList.remove('bg-brand-500', 'text-white');
+        document.getElementById('content-' + item).classList.add('hidden');
+        let btn = document.getElementById('tab-' + item);
+        if (btn) btn.classList.remove('bg-brand-500', 'text-white');
     });
 
     document.getElementById('content-' + tab).classList.remove('hidden');
-
-    const activeBtn = document.getElementById('tab-' + tab);
+    let activeBtn = document.getElementById('tab-' + tab);
     if (activeBtn) activeBtn.classList.add('bg-brand-500', 'text-white');
 
-    const mobileSelect = document.getElementById('mobileTab');
-    if (mobileSelect) mobileSelect.value = tab;
-  }
+    let mobile = document.getElementById('mobileTab');
+    if (mobile) mobile.value = tab;
+}
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedTab = localStorage.getItem(storageKey) || 'account';
-    setTab(savedTab);
-  });
+document.addEventListener('DOMContentLoaded', () => {
+    setTab(localStorage.getItem(storageKey) || 'profile');
+});
 
-// Pop Up Modal
-const deleteModal = document.getElementById('popup-modal');
-const deletePassword = document.getElementById('deletePassword');
-const deleteError = document.getElementById('deleteError');
 
+// DELETE ACCOUNT MODAL
 function openDeleteModal() {
-  deleteModal.classList.remove('hidden');
+    document.getElementById('popup-modal').classList.remove('hidden');
 }
-
 function closeDeleteModal() {
-  deleteModal.classList.add('hidden');
+    document.getElementById('popup-modal').classList.add('hidden');
+    document.getElementById('deleteError').classList.add('hidden');
 }
-
 function confirmDelete() {
-  if (deletePassword.value.length < 6) {
-    deleteError.classList.remove('hidden');
-    return;
-  }
-
-  deleteError.classList.add('hidden');
-  alert("Akun berhasil dihapus (simulasi) ❌");
-  closeDeleteModal();
+    let input = document.getElementById('deletePassword');
+    if (input.value.length < 6) {
+        document.getElementById('deleteError').classList.remove('hidden');
+        return;
+    }
+    alert("Akun berhasil dihapus (simulasi)");
+    closeDeleteModal();
 }
+
+
+
+/* ================= MULTI SELECT SCRIPT (SUDAH FIX) ================= */
+
 (function () {
 
     const OPTIONS = [
@@ -280,7 +320,7 @@ function confirmDelete() {
         { id: 'sport', label: 'Sport' }
     ];
 
-    const root = document.getElementById('multi-select');
+    const root = document.getElementById('multi-select-root');
     const toggle = root.querySelector('#ms-toggle');
     const dropdown = root.querySelector('#ms-dropdown');
     const optionsList = root.querySelector('#ms-options');
@@ -402,3 +442,4 @@ function confirmDelete() {
 
 })();
 </script>
+
