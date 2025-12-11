@@ -120,7 +120,7 @@ require __DIR__ . '/templates/dashboard/header.php';
                                         </div>
                                         <ul id="ms-options" class="max-h-60 overflow-auto text-textcolor dark:text-textcolor-dark"></ul>
                                         <div class="flex items-center justify-between p-3 border-t border-bordercolor dark:border-bordercolor-dark">
-                                            <button id="ms-clear" type="button" class="text-red-500 text-sm">Clear</button>
+                                            <button id="ms-clear" type="button" class="text-red-500 dark:text-red-500 text-sm">Clear</button>
                                             <button id="ms-cancel" type="button" class="text-sm text-textcolor dark:text-textcolor-dark">Close</button>
                                         </div>
                                     </div>
